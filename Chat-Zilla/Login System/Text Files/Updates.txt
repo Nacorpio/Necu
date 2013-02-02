@@ -1,0 +1,12 @@
+﻿<= Update 1.0.0.0 =>
+
+<Major Updates>
+
+
+<Added>
+- A new and detailed GUI/User Interface
+- A settings system with a saving system
+
+<Removed>
+
+<==================>
