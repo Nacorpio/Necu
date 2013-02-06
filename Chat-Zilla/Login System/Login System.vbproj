@@ -50,10 +50,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Steam4NET">
+      <HintPath>..\..\..\..\..\Desktop\VoiDeD-open-steamworks-f9e26a709a35\VoiDeD-open-steamworks-f9e26a709a35\Steam4NET2\Steam4NET2\bin\Debug\Steam4NET.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
@@ -79,6 +83,12 @@
       <DependentUpon>FrmGroupAdministration.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmGroupAdministration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInput.Designer.vb">
+      <DependentUpon>FrmInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmInput.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmLogin.vb">
@@ -119,6 +129,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\FrmGroupAdministration.resx">
       <DependentUpon>FrmGroupAdministration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInput.resx">
+      <DependentUpon>FrmInput.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
@@ -162,6 +175,16 @@
     <None Include="Resources\user.png" />
     <None Include="Resources\balloons.png" />
     <None Include="Resources\currency.png" />
+    <None Include="Resources\smiley.png" />
+    <None Include="Resources\blue-document-smiley.png" />
+    <None Include="Resources\application-resize-full.png" />
+    <None Include="Resources\camera-lens.png" />
+    <None Include="Resources\comment2.png" />
+    <None Include="Resources\mw3-prestige-icon-02.png" />
+    <None Include="Resources\brick.png" />
+    <None Include="Resources\dvd_go.png" />
+    <None Include="Resources\music.png" />
+    <None Include="Resources\game_monitor.png" />
     <Content Include="Text Files\Updates.txt" />
     <None Include="Resources\attibutes.png" />
     <None Include="Resources\donate.png" />
