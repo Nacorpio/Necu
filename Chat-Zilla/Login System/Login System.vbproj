@@ -79,6 +79,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ChatZilla.vb" />
+    <Compile Include="Classes\XboxProfile.vb" />
     <Compile Include="Forms\FrmGroupAdministration.Designer.vb">
       <DependentUpon>FrmGroupAdministration.vb</DependentUpon>
     </Compile>
@@ -185,15 +187,15 @@
     <None Include="Resources\dvd_go.png" />
     <None Include="Resources\music.png" />
     <None Include="Resources\game_monitor.png" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\cross-circle.png" />
     <Content Include="Text Files\Updates.txt" />
     <None Include="Resources\attibutes.png" />
     <None Include="Resources\donate.png" />
     <None Include="Resources\busy.png" />
     <None Include="Resources\order-192.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

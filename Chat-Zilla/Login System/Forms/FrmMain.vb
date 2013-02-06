@@ -1,5 +1,6 @@
 ﻿Imports System.Net
 Imports System.Text.RegularExpressions
+Imports System.ComponentModel
 
 Public Class FrmMain
 
@@ -16,33 +17,35 @@ Public Class FrmMain
     Private OtherProcesses() As String = New String() {"Skype|Skype.exe", "Firefox|firefox.exe", "Bootcamp|Bootcamp.exe"}
     Private DisallowedProcesses() As String = New String() {"Wireshark|wireshark.exe", "Process Hacker|ProcessHacker.exe", ""}
 
+    Private _XboxProfile As XboxProfile
+
 #Region "Program Functionalities"
 
     '/// Spotify
 
 #End Region
 
-    Public Sub VerifiedAccount(ByVal gamerTag As String)
-        Dim membership As String = GetMembership(gamerTag)
-        If membership <> "gold" Then
-            StatusXboxLiveSignedIn.ForeColor = Color.Red
-            StatusXboxLiveSignedIn.Text = "Signed In As """ & gamerTag & """"
-        ElseIf membership = "gold" Then
-            StatusXboxLiveSignedIn.ForeColor = Color.Green
-            StatusXboxLiveSignedIn.Text = "Signed In As """ & gamerTag & """"
-        End If
+    Public Event Verified()
+
+    Private Sub Account_Verified() Handles Me.Verified
+        StatusXboxLiveSignedIn.ForeColor = Color.Blue
+        StatusXboxLiveSignedIn.Text = "Retrieving friends..."
+        For Each xProfile As XboxProfile In _XboxProfile.Friends
+            Dim lItem As New ListViewItem(xProfile.Gamertag)
+            lItem.SubItems.Add(xProfile.Reputation)
+            lItem.SubItems.Add(xProfile.GamerScore)
+            listMyFriends.Items.Add(lItem)
+        Next
+        StatusXboxLiveSignedIn.ForeColor = Color.Green
+        StatusXboxLiveSignedIn.Text = "Signed In As """ & _XboxProfile.Gamertag & """"
     End Sub
 
-    Public Function IsVerifiable(ByVal userName As String) As Boolean
-        Dim webClient As New WebClient
-        Dim source As String = webClient.DownloadString("http://www.xboxleaders.com/api/profile.json?gamertag=" & userName)
-        Dim name As String = Split(source, """Gamertag"": """)(1).Split(""",")(0)
-        If name = userName Then
-            Return True
-        Else
-            Return False
-        End If
-    End Function
+    Public Sub VerifiedAccount(ByVal gamerTag As String)
+        StatusXboxLiveSignedIn.ForeColor = Color.Blue
+        StatusXboxLiveSignedIn.Text = "Verifying account..."
+        _XboxProfile = New XboxProfile(gamerTag)
+        RaiseEvent Verified()
+    End Sub
 
     Dim WithEvents form As Form = FrmInput
 
@@ -53,17 +56,15 @@ Public Class FrmMain
         Return membership
     End Function
 
+    Private WithEvents bgw As New BackgroundWorker
+
+    Private Sub bgw_DoWork() Handles bgw.DoWork
+        MsgBox("Verified account with the gamertag " & FrmInput.Value1 & "!", MsgBoxStyle.Information)
+        VerifiedAccount("Nacorpio")
+    End Sub
+
     Private Sub form_closed() Handles form.Closed
-        If IsVerifiable(FrmInput.Value1) Then
-            MsgBox("Verified account with the gamertag " & FrmInput.Value1 & "!", MsgBoxStyle.Information)
-            If GetMembership(FrmInput.Value1) <> "gold" Then
-                MsgBox("Your Xbox Live Account is not upgraded. Please upgrade to use all of the features in this program.", MsgBoxStyle.Information)
-                VerifiedAccount(FrmInput.Value1)
-            End If
-            VerifiedAccount(FrmInput.Value1)
-        Else
-            MsgBox("Could not verify the account!", MsgBoxStyle.Exclamation)
-        End If
+        bgw.RunWorkerAsync()
     End Sub
 
     Private Sub MenuItem101_Click(sender As Object, e As EventArgs) Handles MenuItem101.Click
@@ -71,6 +72,6 @@ Public Class FrmMain
     End Sub
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Control.CheckForIllegalCrossThreadCalls = False
     End Sub
 End Class

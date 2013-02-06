@@ -1,14 +1,33 @@
 ﻿Public Class FrmInput
 
+    ''' <summary>
+    ''' Occurs whenever the input-window is closed.
+    ''' </summary>
+    ''' <remarks></remarks>
+
     Public Shadows Event Closed()
 
     Private _value1 As String, _value2 As String
+
+    ''' <summary>
+    ''' The 1st TextBox's Label Text.
+    ''' </summary>
+    ''' <value></value>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
 
     Public ReadOnly Property Value1 As String
         Get
             Return _value1
         End Get
     End Property
+
+    ''' <summary>
+    ''' The 2nd TextBox's Label Text.
+    ''' </summary>
+    ''' <value></value>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
 
     Public ReadOnly Property Value2 As String
         Get

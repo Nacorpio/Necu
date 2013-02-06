@@ -193,6 +193,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property cross_circle() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cross-circle", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property cross_script() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("cross-script", resourceCulture)
@@ -246,6 +256,16 @@ Namespace My.Resources
         Friend ReadOnly Property lock() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("lock", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property mail() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mail", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

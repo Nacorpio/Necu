@@ -153,6 +153,8 @@ Partial Class FrmMain
         Me.ToolStripStatusLabel12 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusFriendsOnline = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel14 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripStatusLabel16 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.StatusXboxLiveSignedIn = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ImageList2 = New System.Windows.Forms.ImageList(Me.components)
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -183,6 +185,26 @@ Partial Class FrmMain
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TabControl4 = New System.Windows.Forms.TabControl()
+        Me.TabPage8 = New System.Windows.Forms.TabPage()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.listMyFriendsFriends = New System.Windows.Forms.ListView()
+        Me.ColumnHeader17 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader18 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.listMyGames = New System.Windows.Forms.ListView()
+        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.listMyFriends = New System.Windows.Forms.ListView()
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.TabPage9 = New System.Windows.Forms.TabPage()
+        Me.TabPage10 = New System.Windows.Forms.TabPage()
+        Me.tabPage4ImageList = New System.Windows.Forms.ImageList(Me.components)
         Me.ImageList3 = New System.Windows.Forms.ImageList(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -194,8 +216,8 @@ Partial Class FrmMain
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.ToolStripStatusLabel16 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.StatusXboxLiveSignedIn = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.TabPage11 = New System.Windows.Forms.TabPage()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.StatusStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -206,7 +228,12 @@ Partial Class FrmMain
         Me.TabControl3.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage6.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
+        Me.TabControl4.SuspendLayout()
+        Me.TabPage8.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage11.SuspendLayout()
         Me.SuspendLayout()
         '
         'ImageList1
@@ -796,7 +823,7 @@ Partial Class FrmMain
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel15, Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2, Me.ToolStripStatusLabel3, Me.StatusMyGroupsCount, Me.ToolStripStatusLabel5, Me.ToolStripStatusLabel6, Me.StatusLoggedInAs, Me.ToolStripStatusLabel8, Me.ToolStripStatusLabel9, Me.StatusVaultTotalSize, Me.ToolStripStatusLabel11, Me.ToolStripStatusLabel12, Me.StatusFriendsOnline, Me.ToolStripStatusLabel14, Me.ToolStripStatusLabel16, Me.StatusXboxLiveSignedIn})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 621)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 620)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(888, 22)
         Me.StatusStrip1.TabIndex = 1
@@ -866,7 +893,7 @@ Partial Class FrmMain
         Me.OnlineStatusToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OnlineToolStripMenuItem, Me.AwayToolStripMenuItem, Me.DoNotDisturbToolStripMenuItem, Me.OfflineToolStripMenuItem})
         Me.OnlineStatusToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_go
         Me.OnlineStatusToolStripMenuItem.Name = "OnlineStatusToolStripMenuItem"
-        Me.OnlineStatusToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OnlineStatusToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
         Me.OnlineStatusToolStripMenuItem.Text = "Online Status"
         '
         'OnlineToolStripMenuItem
@@ -900,13 +927,13 @@ Partial Class FrmMain
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(145, 6)
         '
         'LogOutToolStripMenuItem
         '
         Me.LogOutToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.cross_script
         Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
-        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
         Me.LogOutToolStripMenuItem.Text = "Log Out"
         '
         'ToolStripStatusLabel8
@@ -956,6 +983,21 @@ Partial Class FrmMain
         Me.ToolStripStatusLabel14.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left
         Me.ToolStripStatusLabel14.Name = "ToolStripStatusLabel14"
         Me.ToolStripStatusLabel14.Size = New System.Drawing.Size(4, 17)
+        '
+        'ToolStripStatusLabel16
+        '
+        Me.ToolStripStatusLabel16.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripStatusLabel16.Name = "ToolStripStatusLabel16"
+        Me.ToolStripStatusLabel16.Size = New System.Drawing.Size(59, 17)
+        Me.ToolStripStatusLabel16.Text = "Xbox Live:"
+        '
+        'StatusXboxLiveSignedIn
+        '
+        Me.StatusXboxLiveSignedIn.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StatusXboxLiveSignedIn.ForeColor = System.Drawing.Color.Red
+        Me.StatusXboxLiveSignedIn.Name = "StatusXboxLiveSignedIn"
+        Me.StatusXboxLiveSignedIn.Size = New System.Drawing.Size(78, 17)
+        Me.StatusXboxLiveSignedIn.Text = "Not signed in"
         '
         'ImageList2
         '
@@ -1024,7 +1066,7 @@ Partial Class FrmMain
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label1.Location = New System.Drawing.Point(510, 353)
+        Me.Label1.Location = New System.Drawing.Point(514, 380)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(83, 13)
         Me.Label1.TabIndex = 7
@@ -1033,7 +1075,7 @@ Partial Class FrmMain
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Chat_Zilla.My.Resources.Resources.comment2
-        Me.PictureBox1.Location = New System.Drawing.Point(492, 352)
+        Me.PictureBox1.Location = New System.Drawing.Point(496, 379)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(16, 16)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -1241,6 +1283,7 @@ Partial Class FrmMain
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.TabControl4)
         Me.TabPage2.ImageIndex = 1
         Me.TabPage2.Location = New System.Drawing.Point(4, 23)
         Me.TabPage2.Name = "TabPage2"
@@ -1249,6 +1292,186 @@ Partial Class FrmMain
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Game Chat"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'TabControl4
+        '
+        Me.TabControl4.Controls.Add(Me.TabPage8)
+        Me.TabControl4.Controls.Add(Me.TabPage9)
+        Me.TabControl4.Controls.Add(Me.TabPage10)
+        Me.TabControl4.Controls.Add(Me.TabPage11)
+        Me.TabControl4.ImageList = Me.tabPage4ImageList
+        Me.TabControl4.Location = New System.Drawing.Point(6, 6)
+        Me.TabControl4.Name = "TabControl4"
+        Me.TabControl4.SelectedIndex = 0
+        Me.TabControl4.Size = New System.Drawing.Size(846, 500)
+        Me.TabControl4.TabIndex = 0
+        '
+        'TabPage8
+        '
+        Me.TabPage8.Controls.Add(Me.GroupBox2)
+        Me.TabPage8.Controls.Add(Me.GroupBox1)
+        Me.TabPage8.Controls.Add(Me.listMyFriends)
+        Me.TabPage8.ImageIndex = 0
+        Me.TabPage8.Location = New System.Drawing.Point(4, 23)
+        Me.TabPage8.Name = "TabPage8"
+        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage8.Size = New System.Drawing.Size(838, 473)
+        Me.TabPage8.TabIndex = 0
+        Me.TabPage8.Text = "Xbox Live"
+        Me.TabPage8.UseVisualStyleBackColor = True
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Location = New System.Drawing.Point(6, 0)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(319, 112)
+        Me.GroupBox2.TabIndex = 2
+        Me.GroupBox2.TabStop = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.listMyFriendsFriends)
+        Me.GroupBox1.Controls.Add(Me.listMyGames)
+        Me.GroupBox1.Controls.Add(Me.Button9)
+        Me.GroupBox1.Controls.Add(Me.Button8)
+        Me.GroupBox1.Location = New System.Drawing.Point(331, 0)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(502, 468)
+        Me.GroupBox1.TabIndex = 1
+        Me.GroupBox1.TabStop = False
+        '
+        'listMyFriendsFriends
+        '
+        Me.listMyFriendsFriends.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader17, Me.ColumnHeader18})
+        Me.listMyFriendsFriends.FullRowSelect = True
+        Me.listMyFriendsFriends.GridLines = True
+        Me.listMyFriendsFriends.Location = New System.Drawing.Point(6, 216)
+        Me.listMyFriendsFriends.MultiSelect = False
+        Me.listMyFriendsFriends.Name = "listMyFriendsFriends"
+        Me.listMyFriendsFriends.Size = New System.Drawing.Size(490, 212)
+        Me.listMyFriendsFriends.TabIndex = 3
+        Me.listMyFriendsFriends.UseCompatibleStateImageBehavior = False
+        Me.listMyFriendsFriends.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader17
+        '
+        Me.ColumnHeader17.Text = "Name"
+        Me.ColumnHeader17.Width = 316
+        '
+        'ColumnHeader18
+        '
+        Me.ColumnHeader18.Text = "Status"
+        Me.ColumnHeader18.Width = 156
+        '
+        'listMyGames
+        '
+        Me.listMyGames.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13})
+        Me.listMyGames.FullRowSelect = True
+        Me.listMyGames.GridLines = True
+        Me.listMyGames.Location = New System.Drawing.Point(6, 12)
+        Me.listMyGames.MultiSelect = False
+        Me.listMyGames.Name = "listMyGames"
+        Me.listMyGames.Size = New System.Drawing.Size(490, 198)
+        Me.listMyGames.TabIndex = 2
+        Me.listMyGames.UseCompatibleStateImageBehavior = False
+        Me.listMyGames.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader11
+        '
+        Me.ColumnHeader11.Text = "Name"
+        Me.ColumnHeader11.Width = 247
+        '
+        'ColumnHeader12
+        '
+        Me.ColumnHeader12.Text = "Gamerscore"
+        Me.ColumnHeader12.Width = 94
+        '
+        'ColumnHeader13
+        '
+        Me.ColumnHeader13.Text = "Percentage Completed"
+        Me.ColumnHeader13.Width = 141
+        '
+        'Button9
+        '
+        Me.Button9.Image = Global.Chat_Zilla.My.Resources.Resources.cross_circle
+        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button9.Location = New System.Drawing.Point(376, 434)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(120, 28)
+        Me.Button9.TabIndex = 1
+        Me.Button9.Text = "Remove Friend"
+        Me.Button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Image = Global.Chat_Zilla.My.Resources.Resources.mail
+        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button8.Location = New System.Drawing.Point(6, 434)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(120, 28)
+        Me.Button8.TabIndex = 0
+        Me.Button8.Text = "Send Message"
+        Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'listMyFriends
+        '
+        Me.listMyFriends.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10})
+        Me.listMyFriends.FullRowSelect = True
+        Me.listMyFriends.GridLines = True
+        Me.listMyFriends.Location = New System.Drawing.Point(6, 117)
+        Me.listMyFriends.MultiSelect = False
+        Me.listMyFriends.Name = "listMyFriends"
+        Me.listMyFriends.Size = New System.Drawing.Size(319, 350)
+        Me.listMyFriends.TabIndex = 0
+        Me.listMyFriends.UseCompatibleStateImageBehavior = False
+        Me.listMyFriends.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "Name"
+        Me.ColumnHeader8.Width = 154
+        '
+        'ColumnHeader9
+        '
+        Me.ColumnHeader9.Text = "Reputation"
+        Me.ColumnHeader9.Width = 78
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "Gamerscore"
+        Me.ColumnHeader10.Width = 81
+        '
+        'TabPage9
+        '
+        Me.TabPage9.ImageIndex = 1
+        Me.TabPage9.Location = New System.Drawing.Point(4, 23)
+        Me.TabPage9.Name = "TabPage9"
+        Me.TabPage9.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage9.Size = New System.Drawing.Size(838, 473)
+        Me.TabPage9.TabIndex = 1
+        Me.TabPage9.Text = "Playstation Network"
+        Me.TabPage9.UseVisualStyleBackColor = True
+        '
+        'TabPage10
+        '
+        Me.TabPage10.ImageIndex = 2
+        Me.TabPage10.Location = New System.Drawing.Point(4, 23)
+        Me.TabPage10.Name = "TabPage10"
+        Me.TabPage10.Size = New System.Drawing.Size(838, 473)
+        Me.TabPage10.TabIndex = 2
+        Me.TabPage10.Text = "Steam"
+        Me.TabPage10.UseVisualStyleBackColor = True
+        '
+        'tabPage4ImageList
+        '
+        Me.tabPage4ImageList.ImageStream = CType(resources.GetObject("tabPage4ImageList.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.tabPage4ImageList.TransparentColor = System.Drawing.Color.Transparent
+        Me.tabPage4ImageList.Images.SetKeyName(0, "1357367848_xbox.png")
+        Me.tabPage4ImageList.Images.SetKeyName(1, "television.png")
+        Me.tabPage4ImageList.Images.SetKeyName(2, "computer.png")
+        Me.tabPage4ImageList.Images.SetKeyName(3, "brick.png")
         '
         'ImageList3
         '
@@ -1283,7 +1506,7 @@ Partial Class FrmMain
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(888, 643)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(888, 642)
         Me.ShapeContainer1.TabIndex = 6
         Me.ShapeContainer1.TabStop = False
         '
@@ -1359,26 +1582,32 @@ Partial Class FrmMain
         Me.PictureBox2.TabIndex = 5
         Me.PictureBox2.TabStop = False
         '
-        'ToolStripStatusLabel16
+        'TabPage11
         '
-        Me.ToolStripStatusLabel16.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripStatusLabel16.Name = "ToolStripStatusLabel16"
-        Me.ToolStripStatusLabel16.Size = New System.Drawing.Size(59, 17)
-        Me.ToolStripStatusLabel16.Text = "Xbox Live:"
+        Me.TabPage11.BackColor = System.Drawing.Color.White
+        Me.TabPage11.Controls.Add(Me.GroupBox3)
+        Me.TabPage11.ImageIndex = 3
+        Me.TabPage11.Location = New System.Drawing.Point(4, 23)
+        Me.TabPage11.Name = "TabPage11"
+        Me.TabPage11.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage11.Size = New System.Drawing.Size(838, 473)
+        Me.TabPage11.TabIndex = 3
+        Me.TabPage11.Text = "Settings"
         '
-        'StatusXboxLiveSignedIn
+        'GroupBox3
         '
-        Me.StatusXboxLiveSignedIn.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StatusXboxLiveSignedIn.ForeColor = System.Drawing.Color.Red
-        Me.StatusXboxLiveSignedIn.Name = "StatusXboxLiveSignedIn"
-        Me.StatusXboxLiveSignedIn.Size = New System.Drawing.Size(78, 17)
-        Me.StatusXboxLiveSignedIn.Text = "Not signed in"
+        Me.GroupBox3.Location = New System.Drawing.Point(6, 6)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(340, 248)
+        Me.GroupBox3.TabIndex = 0
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "GroupBox3"
         '
         'FrmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(888, 643)
+        Me.ClientSize = New System.Drawing.Size(888, 642)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label5)
@@ -1408,7 +1637,12 @@ Partial Class FrmMain
         Me.TabControl3.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage6.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabControl4.ResumeLayout(False)
+        Me.TabPage8.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage11.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1585,4 +1819,26 @@ Partial Class FrmMain
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents ToolStripStatusLabel16 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents StatusXboxLiveSignedIn As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents TabControl4 As System.Windows.Forms.TabControl
+    Friend WithEvents TabPage8 As System.Windows.Forms.TabPage
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents listMyFriends As System.Windows.Forms.ListView
+    Friend WithEvents ColumnHeader8 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader9 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader10 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents TabPage9 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage10 As System.Windows.Forms.TabPage
+    Friend WithEvents tabPage4ImageList As System.Windows.Forms.ImageList
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents listMyFriendsFriends As System.Windows.Forms.ListView
+    Friend WithEvents ColumnHeader17 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader18 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents listMyGames As System.Windows.Forms.ListView
+    Friend WithEvents ColumnHeader11 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader12 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader13 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents TabPage11 As System.Windows.Forms.TabPage
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
 End Class
