@@ -20,11 +20,4 @@ Public Class ChatZilla
         Steam = 3
     End Enum
 
-    Public Function Login(ByVal UserName As String, ByVal Password As String) As Boolean
-        If UserName = "Admin" AndAlso Password = "Lcrlh7lcrlh7" Then
-            '/// Sign in as a temporary admin.
-
-        End If
-    End Function
-
 End Class
