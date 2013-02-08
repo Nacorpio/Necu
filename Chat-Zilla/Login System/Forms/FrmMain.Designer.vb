@@ -204,6 +204,7 @@ Partial Class FrmMain
         Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage9 = New System.Windows.Forms.TabPage()
         Me.TabPage10 = New System.Windows.Forms.TabPage()
+        Me.TabPage11 = New System.Windows.Forms.TabPage()
         Me.tabPage4ImageList = New System.Windows.Forms.ImageList(Me.components)
         Me.ImageList3 = New System.Windows.Forms.ImageList(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
@@ -216,8 +217,6 @@ Partial Class FrmMain
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.TabPage11 = New System.Windows.Forms.TabPage()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.StatusStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -233,7 +232,6 @@ Partial Class FrmMain
         Me.TabPage8.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage11.SuspendLayout()
         Me.SuspendLayout()
         '
         'ImageList1
@@ -1464,6 +1462,17 @@ Partial Class FrmMain
         Me.TabPage10.Text = "Steam"
         Me.TabPage10.UseVisualStyleBackColor = True
         '
+        'TabPage11
+        '
+        Me.TabPage11.BackColor = System.Drawing.Color.White
+        Me.TabPage11.ImageIndex = 3
+        Me.TabPage11.Location = New System.Drawing.Point(4, 23)
+        Me.TabPage11.Name = "TabPage11"
+        Me.TabPage11.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage11.Size = New System.Drawing.Size(838, 473)
+        Me.TabPage11.TabIndex = 3
+        Me.TabPage11.Text = "Settings"
+        '
         'tabPage4ImageList
         '
         Me.tabPage4ImageList.ImageStream = CType(resources.GetObject("tabPage4ImageList.ImageStream"), System.Windows.Forms.ImageListStreamer)
@@ -1582,27 +1591,6 @@ Partial Class FrmMain
         Me.PictureBox2.TabIndex = 5
         Me.PictureBox2.TabStop = False
         '
-        'TabPage11
-        '
-        Me.TabPage11.BackColor = System.Drawing.Color.White
-        Me.TabPage11.Controls.Add(Me.GroupBox3)
-        Me.TabPage11.ImageIndex = 3
-        Me.TabPage11.Location = New System.Drawing.Point(4, 23)
-        Me.TabPage11.Name = "TabPage11"
-        Me.TabPage11.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage11.Size = New System.Drawing.Size(838, 473)
-        Me.TabPage11.TabIndex = 3
-        Me.TabPage11.Text = "Settings"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Location = New System.Drawing.Point(6, 6)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(340, 248)
-        Me.GroupBox3.TabIndex = 0
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "GroupBox3"
-        '
         'FrmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1642,7 +1630,6 @@ Partial Class FrmMain
         Me.TabPage8.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage11.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1840,5 +1827,4 @@ Partial Class FrmMain
     Friend WithEvents ColumnHeader13 As System.Windows.Forms.ColumnHeader
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents TabPage11 As System.Windows.Forms.TabPage
-    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
 End Class
