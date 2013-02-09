@@ -134,14 +134,23 @@ Partial Class FrmMain
         Me.ToolStripStatusLabel15 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusMyGroupsCount = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel5 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripStatusLabel6 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusLoggedInAs = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.OnlineStatusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OnlineToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AwayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DoNotDisturbToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OfflineToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripStatusLabel8 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel9 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusVaultTotalSize = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel11 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripStatusLabel12 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusFriendsOnline = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel14 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel16 = New System.Windows.Forms.ToolStripStatusLabel()
@@ -152,7 +161,12 @@ Partial Class FrmMain
         Me.TabControl2 = New System.Windows.Forms.TabControl()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
@@ -166,9 +180,6 @@ Partial Class FrmMain
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage6 = New System.Windows.Forms.TabPage()
-        Me.ListView2 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabControl4 = New System.Windows.Forms.TabControl()
@@ -182,6 +193,8 @@ Partial Class FrmMain
         Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.listMyFriends = New System.Windows.Forms.ListView()
         Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -201,27 +214,13 @@ Partial Class FrmMain
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.ToolStripStatusLabel6 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.OnlineStatusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OnlineToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AwayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DoNotDisturbToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OfflineToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripStatusLabel12 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.TreeView1 = New System.Windows.Forms.TreeView()
         Me.StatusStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabControl2.SuspendLayout()
         Me.TabPage4.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
         Me.TabControl3.SuspendLayout()
         Me.TabPage3.SuspendLayout()
@@ -231,7 +230,6 @@ Partial Class FrmMain
         Me.TabPage8.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ImageList1
@@ -821,7 +819,7 @@ Partial Class FrmMain
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel15, Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2, Me.ToolStripStatusLabel3, Me.StatusMyGroupsCount, Me.ToolStripStatusLabel5, Me.ToolStripStatusLabel6, Me.StatusLoggedInAs, Me.ToolStripStatusLabel8, Me.ToolStripStatusLabel9, Me.StatusVaultTotalSize, Me.ToolStripStatusLabel11, Me.ToolStripStatusLabel12, Me.StatusFriendsOnline, Me.ToolStripStatusLabel14, Me.ToolStripStatusLabel16, Me.StatusXboxLiveSignedIn})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 599)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 621)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(888, 22)
         Me.StatusStrip1.TabIndex = 1
@@ -849,6 +847,14 @@ Partial Class FrmMain
         Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
         Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(4, 17)
         '
+        'ToolStripStatusLabel3
+        '
+        Me.ToolStripStatusLabel3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripStatusLabel3.Image = Global.Chat_Zilla.My.Resources.Resources.balloons
+        Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
+        Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(81, 17)
+        Me.ToolStripStatusLabel3.Text = "My groups:"
+        '
         'StatusMyGroupsCount
         '
         Me.StatusMyGroupsCount.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -862,6 +868,14 @@ Partial Class FrmMain
         Me.ToolStripStatusLabel5.Name = "ToolStripStatusLabel5"
         Me.ToolStripStatusLabel5.Size = New System.Drawing.Size(4, 17)
         '
+        'ToolStripStatusLabel6
+        '
+        Me.ToolStripStatusLabel6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripStatusLabel6.Image = Global.Chat_Zilla.My.Resources.Resources.user
+        Me.ToolStripStatusLabel6.Name = "ToolStripStatusLabel6"
+        Me.ToolStripStatusLabel6.Size = New System.Drawing.Size(93, 17)
+        Me.ToolStripStatusLabel6.Text = "Logged in as:"
+        '
         'StatusLoggedInAs
         '
         Me.StatusLoggedInAs.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OnlineStatusToolStripMenuItem, Me.ToolStripSeparator1, Me.LogOutToolStripMenuItem})
@@ -870,10 +884,53 @@ Partial Class FrmMain
         Me.StatusLoggedInAs.Size = New System.Drawing.Size(53, 20)
         Me.StatusLoggedInAs.Text = "Guest"
         '
+        'OnlineStatusToolStripMenuItem
+        '
+        Me.OnlineStatusToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OnlineToolStripMenuItem, Me.AwayToolStripMenuItem, Me.DoNotDisturbToolStripMenuItem, Me.OfflineToolStripMenuItem})
+        Me.OnlineStatusToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_go
+        Me.OnlineStatusToolStripMenuItem.Name = "OnlineStatusToolStripMenuItem"
+        Me.OnlineStatusToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.OnlineStatusToolStripMenuItem.Text = "Online Status"
+        '
+        'OnlineToolStripMenuItem
+        '
+        Me.OnlineToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_green
+        Me.OnlineToolStripMenuItem.Name = "OnlineToolStripMenuItem"
+        Me.OnlineToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.OnlineToolStripMenuItem.Text = "Online"
+        '
+        'AwayToolStripMenuItem
+        '
+        Me.AwayToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_orange
+        Me.AwayToolStripMenuItem.Name = "AwayToolStripMenuItem"
+        Me.AwayToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.AwayToolStripMenuItem.Text = "Away"
+        '
+        'DoNotDisturbToolStripMenuItem
+        '
+        Me.DoNotDisturbToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_red
+        Me.DoNotDisturbToolStripMenuItem.Name = "DoNotDisturbToolStripMenuItem"
+        Me.DoNotDisturbToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.DoNotDisturbToolStripMenuItem.Text = "Do Not Disturb"
+        '
+        'OfflineToolStripMenuItem
+        '
+        Me.OfflineToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_black
+        Me.OfflineToolStripMenuItem.Name = "OfflineToolStripMenuItem"
+        Me.OfflineToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.OfflineToolStripMenuItem.Text = "Offline"
+        '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(145, 6)
+        '
+        'LogOutToolStripMenuItem
+        '
+        Me.LogOutToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.cross_script
+        Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
+        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.LogOutToolStripMenuItem.Text = "Log Out"
         '
         'ToolStripStatusLabel8
         '
@@ -900,6 +957,15 @@ Partial Class FrmMain
         Me.ToolStripStatusLabel11.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left
         Me.ToolStripStatusLabel11.Name = "ToolStripStatusLabel11"
         Me.ToolStripStatusLabel11.Size = New System.Drawing.Size(4, 17)
+        '
+        'ToolStripStatusLabel12
+        '
+        Me.ToolStripStatusLabel12.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripStatusLabel12.Image = Global.Chat_Zilla.My.Resources.Resources.smiley
+        Me.ToolStripStatusLabel12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ToolStripStatusLabel12.Name = "ToolStripStatusLabel12"
+        Me.ToolStripStatusLabel12.Size = New System.Drawing.Size(102, 17)
+        Me.ToolStripStatusLabel12.Text = "Friends Online:"
         '
         'StatusFriendsOnline
         '
@@ -1002,6 +1068,16 @@ Partial Class FrmMain
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Guest is typing..."
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Chat_Zilla.My.Resources.Resources.comment2
+        Me.PictureBox1.Location = New System.Drawing.Point(496, 379)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'Button5
         '
         Me.Button5.Location = New System.Drawing.Point(554, 413)
@@ -1010,6 +1086,46 @@ Partial Class FrmMain
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "Send"
         Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Image = Global.Chat_Zilla.My.Resources.Resources.camera_lens
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button4.Location = New System.Drawing.Point(64, 382)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(25, 25)
+        Me.Button4.TabIndex = 5
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Image = Global.Chat_Zilla.My.Resources.Resources.application_resize_full
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button3.Location = New System.Drawing.Point(91, 382)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(25, 25)
+        Me.Button3.TabIndex = 4
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Image = Global.Chat_Zilla.My.Resources.Resources.blue_document_smiley
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button2.Location = New System.Drawing.Point(33, 382)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(25, 25)
+        Me.Button2.TabIndex = 3
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Image = Global.Chat_Zilla.My.Resources.Resources.smiley
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.Location = New System.Drawing.Point(6, 382)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(25, 25)
+        Me.Button1.TabIndex = 2
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'RichTextBox1
         '
@@ -1118,7 +1234,7 @@ Partial Class FrmMain
         '
         'TabPage6
         '
-        Me.TabPage6.Controls.Add(Me.ListView2)
+        Me.TabPage6.Controls.Add(Me.TreeView1)
         Me.TabPage6.ImageIndex = 1
         Me.TabPage6.Location = New System.Drawing.Point(4, 23)
         Me.TabPage6.Name = "TabPage6"
@@ -1127,29 +1243,6 @@ Partial Class FrmMain
         Me.TabPage6.TabIndex = 1
         Me.TabPage6.Text = "Groups"
         Me.TabPage6.UseVisualStyleBackColor = True
-        '
-        'ListView2
-        '
-        Me.ListView2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader3, Me.ColumnHeader4})
-        Me.ListView2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ListView2.Location = New System.Drawing.Point(3, 3)
-        Me.ListView2.MultiSelect = False
-        Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(211, 466)
-        Me.ListView2.TabIndex = 1
-        Me.ListView2.UseCompatibleStateImageBehavior = False
-        Me.ListView2.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "Name"
-        Me.ColumnHeader3.Width = 133
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "Status"
-        Me.ColumnHeader4.Width = 70
         '
         'TabPage7
         '
@@ -1271,6 +1364,30 @@ Partial Class FrmMain
         Me.ColumnHeader13.Text = "Percentage Completed"
         Me.ColumnHeader13.Width = 141
         '
+        'Button9
+        '
+        Me.Button9.Image = Global.Chat_Zilla.My.Resources.Resources.cross_circle
+        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button9.Location = New System.Drawing.Point(376, 434)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(120, 28)
+        Me.Button9.TabIndex = 1
+        Me.Button9.Text = "Remove Friend"
+        Me.Button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Image = Global.Chat_Zilla.My.Resources.Resources.mail
+        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button8.Location = New System.Drawing.Point(6, 434)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(120, 28)
+        Me.Button8.TabIndex = 0
+        Me.Button8.Text = "Send Message"
+        Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button8.UseVisualStyleBackColor = True
+        '
         'listMyFriends
         '
         Me.listMyFriends.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10})
@@ -1373,7 +1490,7 @@ Partial Class FrmMain
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(888, 621)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(888, 643)
         Me.ShapeContainer1.TabIndex = 6
         Me.ShapeContainer1.TabStop = False
         '
@@ -1449,153 +1566,21 @@ Partial Class FrmMain
         Me.PictureBox2.TabIndex = 5
         Me.PictureBox2.TabStop = False
         '
-        'PictureBox1
+        'TreeView1
         '
-        Me.PictureBox1.Image = Global.Chat_Zilla.My.Resources.Resources.comment2
-        Me.PictureBox1.Location = New System.Drawing.Point(496, 379)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
-        'Button4
-        '
-        Me.Button4.Image = Global.Chat_Zilla.My.Resources.Resources.camera_lens
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button4.Location = New System.Drawing.Point(64, 382)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(25, 25)
-        Me.Button4.TabIndex = 5
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Image = Global.Chat_Zilla.My.Resources.Resources.application_resize_full
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button3.Location = New System.Drawing.Point(91, 382)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(25, 25)
-        Me.Button3.TabIndex = 4
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Image = Global.Chat_Zilla.My.Resources.Resources.blue_document_smiley
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.Location = New System.Drawing.Point(33, 382)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(25, 25)
-        Me.Button2.TabIndex = 3
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Image = Global.Chat_Zilla.My.Resources.Resources.smiley
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.Location = New System.Drawing.Point(6, 382)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(25, 25)
-        Me.Button1.TabIndex = 2
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.Image = Global.Chat_Zilla.My.Resources.Resources.cross_circle
-        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button9.Location = New System.Drawing.Point(376, 434)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(120, 28)
-        Me.Button9.TabIndex = 1
-        Me.Button9.Text = "Remove Friend"
-        Me.Button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.Image = Global.Chat_Zilla.My.Resources.Resources.mail
-        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.Location = New System.Drawing.Point(6, 434)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(120, 28)
-        Me.Button8.TabIndex = 0
-        Me.Button8.Text = "Send Message"
-        Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'ToolStripStatusLabel3
-        '
-        Me.ToolStripStatusLabel3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripStatusLabel3.Image = Global.Chat_Zilla.My.Resources.Resources.balloons
-        Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
-        Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(81, 16)
-        Me.ToolStripStatusLabel3.Text = "My groups:"
-        '
-        'ToolStripStatusLabel6
-        '
-        Me.ToolStripStatusLabel6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripStatusLabel6.Image = Global.Chat_Zilla.My.Resources.Resources.user
-        Me.ToolStripStatusLabel6.Name = "ToolStripStatusLabel6"
-        Me.ToolStripStatusLabel6.Size = New System.Drawing.Size(93, 16)
-        Me.ToolStripStatusLabel6.Text = "Logged in as:"
-        '
-        'OnlineStatusToolStripMenuItem
-        '
-        Me.OnlineStatusToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OnlineToolStripMenuItem, Me.AwayToolStripMenuItem, Me.DoNotDisturbToolStripMenuItem, Me.OfflineToolStripMenuItem})
-        Me.OnlineStatusToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_go
-        Me.OnlineStatusToolStripMenuItem.Name = "OnlineStatusToolStripMenuItem"
-        Me.OnlineStatusToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.OnlineStatusToolStripMenuItem.Text = "Online Status"
-        '
-        'OnlineToolStripMenuItem
-        '
-        Me.OnlineToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_green
-        Me.OnlineToolStripMenuItem.Name = "OnlineToolStripMenuItem"
-        Me.OnlineToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
-        Me.OnlineToolStripMenuItem.Text = "Online"
-        '
-        'AwayToolStripMenuItem
-        '
-        Me.AwayToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_orange
-        Me.AwayToolStripMenuItem.Name = "AwayToolStripMenuItem"
-        Me.AwayToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
-        Me.AwayToolStripMenuItem.Text = "Away"
-        '
-        'DoNotDisturbToolStripMenuItem
-        '
-        Me.DoNotDisturbToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_red
-        Me.DoNotDisturbToolStripMenuItem.Name = "DoNotDisturbToolStripMenuItem"
-        Me.DoNotDisturbToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
-        Me.DoNotDisturbToolStripMenuItem.Text = "Do Not Disturb"
-        '
-        'OfflineToolStripMenuItem
-        '
-        Me.OfflineToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_black
-        Me.OfflineToolStripMenuItem.Name = "OfflineToolStripMenuItem"
-        Me.OfflineToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
-        Me.OfflineToolStripMenuItem.Text = "Offline"
-        '
-        'LogOutToolStripMenuItem
-        '
-        Me.LogOutToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.cross_script
-        Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
-        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.LogOutToolStripMenuItem.Text = "Log Out"
-        '
-        'ToolStripStatusLabel12
-        '
-        Me.ToolStripStatusLabel12.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripStatusLabel12.Image = Global.Chat_Zilla.My.Resources.Resources.smiley
-        Me.ToolStripStatusLabel12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ToolStripStatusLabel12.Name = "ToolStripStatusLabel12"
-        Me.ToolStripStatusLabel12.Size = New System.Drawing.Size(102, 16)
-        Me.ToolStripStatusLabel12.Text = "Friends Online:"
+        Me.TreeView1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TreeView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TreeView1.Location = New System.Drawing.Point(3, 3)
+        Me.TreeView1.Name = "TreeView1"
+        Me.TreeView1.ShowLines = False
+        Me.TreeView1.Size = New System.Drawing.Size(211, 466)
+        Me.TreeView1.TabIndex = 0
         '
         'FrmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(888, 621)
+        Me.ClientSize = New System.Drawing.Size(888, 643)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label5)
@@ -1620,6 +1605,7 @@ Partial Class FrmMain
         Me.TabControl2.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
         Me.TabControl3.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
@@ -1629,7 +1615,6 @@ Partial Class FrmMain
         Me.TabPage8.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1786,9 +1771,6 @@ Partial Class FrmMain
     Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
     Friend WithEvents TabPage6 As System.Windows.Forms.TabPage
-    Friend WithEvents ListView2 As System.Windows.Forms.ListView
-    Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader4 As System.Windows.Forms.ColumnHeader
     Friend WithEvents TabPage7 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
     Friend WithEvents ImageList3 As System.Windows.Forms.ImageList
@@ -1827,4 +1809,5 @@ Partial Class FrmMain
     Friend WithEvents ColumnHeader13 As System.Windows.Forms.ColumnHeader
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents TabPage11 As System.Windows.Forms.TabPage
+    Friend WithEvents TreeView1 As System.Windows.Forms.TreeView
 End Class

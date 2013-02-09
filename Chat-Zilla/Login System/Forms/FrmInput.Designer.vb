@@ -47,8 +47,8 @@ Partial Class FrmInput
         '
         'Label2
         '
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 31)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(12, 28)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(354, 47)
         Me.Label2.TabIndex = 1

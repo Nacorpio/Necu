@@ -1,6 +1,7 @@
 ﻿Imports System.Net
 Imports System.Text.RegularExpressions
 Imports System.ComponentModel
+Imports SKYPE4COMLib
 
 Public Class FrmMain
 
@@ -22,6 +23,32 @@ Public Class FrmMain
 #Region "Program Functionalities"
 
     '/// Spotify
+
+    '/// Skype
+
+    Private WithEvents _s As New Skype
+    Private s_friends As New UserCollection, s_user_current As User
+
+    Public Sub InitializeSkype()
+        _s.Attach()
+        If _s.AttachmentStatus = TAttachmentStatus.apiAttachSuccess Then
+            s_user_current = _s.CurrentUser
+            s_friends = _s.Friends
+            Dim sNode As New TreeNode("Skype Contacts (" & s_friends.Count & ")")
+            For Each u As User In s_friends
+                If u.FullName <> String.Empty Then
+                    sNode.Nodes.Add(u.FullName)
+                End If
+            Next
+            TreeView1.Nodes.Add(sNode)
+        Else
+            MsgBox("Denied access to Chat-Zilla: Cannot attach to Skype!", MsgBoxStyle.Exclamation)
+        End If
+    End Sub
+
+    Public Sub SelectUser(ByVal User As String)
+
+    End Sub
 
 #End Region
 
@@ -73,5 +100,6 @@ Public Class FrmMain
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Control.CheckForIllegalCrossThreadCalls = False
+        InitializeSkype()
     End Sub
 End Class

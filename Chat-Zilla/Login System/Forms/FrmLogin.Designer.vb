@@ -68,9 +68,9 @@ Partial Class FrmLogin
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Segoe UI Semibold", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(184, 154)
+        Me.Button3.Location = New System.Drawing.Point(184, 156)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(44, 23)
+        Me.Button3.Size = New System.Drawing.Size(44, 20)
         Me.Button3.TabIndex = 8
         Me.Button3.Text = "Copy"
         Me.Button3.UseVisualStyleBackColor = True
