@@ -18,7 +18,7 @@ Public Class FrmLogin
     End Sub
 
     Private Sub FrmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TextBox4.Text = GetProcessorId() & GetMotherBoardID()
+        TextBox4.Text = GetProcessorId()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -37,6 +37,6 @@ Public Class FrmLogin
     End Function
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        My.Computer.Clipboard.SetText(TextBox4.Text & GetMotherBoardID())
+        My.Computer.Clipboard.SetText(TextBox4.Text)
     End Sub
 End Class
