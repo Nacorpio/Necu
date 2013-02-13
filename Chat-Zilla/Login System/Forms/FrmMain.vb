@@ -20,6 +20,9 @@ Public Class FrmMain
 
     Private _XboxProfile As XboxProfile
 
+    Dim tabPage1_ As TabPage
+    Dim tabPage2_ As TabPage
+
 #Region "Program Functionalities"
 
     '/// Spotify
@@ -28,23 +31,6 @@ Public Class FrmMain
 
     Private WithEvents _s As New Skype
     Private s_friends As New UserCollection, s_user_current As User
-
-    Public Sub InitializeSkype()
-        _s.Attach()
-        If _s.AttachmentStatus = TAttachmentStatus.apiAttachSuccess Then
-            s_user_current = _s.CurrentUser
-            s_friends = _s.Friends
-            Dim sNode As New TreeNode("Skype Contacts (" & s_friends.Count & ")")
-            For Each u As User In s_friends
-                If u.FullName <> String.Empty Then
-                    sNode.Nodes.Add(u.FullName)
-                End If
-            Next
-            TreeView1.Nodes.Add(sNode)
-        Else
-            MsgBox("Denied access to Chat-Zilla: Cannot attach to Skype!", MsgBoxStyle.Exclamation)
-        End If
-    End Sub
 
     Public Sub SelectUser(ByVal User As String)
 
@@ -98,8 +84,22 @@ Public Class FrmMain
         FrmInput.OpenInput("Xbox Authentication", "Link Xbox Live Account", "Please enter your Gamertag and the Gamerscore of your account to link it.", Me.Icon, "Gamertag:", "Gamerscore:")
     End Sub
 
+    Public Sub ShowNewsTab()
+        tabPage1_ = TabControl2.TabPages(0)
+        tabPage2_ = TabControl2.TabPages(1)
+        TabControl2.TabPages.Remove(TabControl2.TabPages(0))
+        TabControl2.TabPages.Remove(TabControl2.TabPages(0))
+    End Sub
+
+    Public Sub ShowTabPages()
+        TabControl2.TabPages.Add(tabPage1_)
+        TabControl2.TabPages.Add(tabPage2_)
+        TabControl2.TabPages.Remove(TabControl2.TabPages(0))
+    End Sub
+
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Control.CheckForIllegalCrossThreadCalls = False
-        InitializeSkype()
+        ShowNewsTab()
     End Sub
+
 End Class

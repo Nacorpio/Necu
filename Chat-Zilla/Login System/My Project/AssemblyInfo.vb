@@ -8,12 +8,12 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Chat Zilla")> 
+<Assembly: AssemblyTitle("Necu™")> 
 <Assembly: AssemblyDescription("An advanced chat-system for windows.")> 
-<Assembly: AssemblyCompany("AppZilla")> 
-<Assembly: AssemblyProduct("ChatZilla 1.0")> 
-<Assembly: AssemblyCopyright("Copyright © AppZilla™ 2013")> 
-<Assembly: AssemblyTrademark("AppZilla™")> 
+<Assembly: AssemblyCompany("Necution™")> 
+<Assembly: AssemblyProduct("Necu 1.0")> 
+<Assembly: AssemblyCopyright("Copyright © Necution 2013")> 
+<Assembly: AssemblyTrademark("Necution™")> 
 
 <Assembly: ComVisible(False)>
 

@@ -121,7 +121,7 @@ Partial Class FrmGroupAdministration
         '
         'Button7
         '
-        Me.Button7.Image = Global.Chat_Zilla.My.Resources.Resources.attibutes
+        Me.Button7.Image = Global.Necu.My.Resources.Resources.attibutes
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button7.Location = New System.Drawing.Point(31, 128)
         Me.Button7.Name = "Button7"
@@ -133,7 +133,7 @@ Partial Class FrmGroupAdministration
         '
         'Button6
         '
-        Me.Button6.Image = Global.Chat_Zilla.My.Resources.Resources.donate
+        Me.Button6.Image = Global.Necu.My.Resources.Resources.donate
         Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button6.Location = New System.Drawing.Point(31, 97)
         Me.Button6.Name = "Button6"
@@ -144,7 +144,7 @@ Partial Class FrmGroupAdministration
         '
         'Button5
         '
-        Me.Button5.Image = Global.Chat_Zilla.My.Resources.Resources.busy
+        Me.Button5.Image = Global.Necu.My.Resources.Resources.busy
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button5.Location = New System.Drawing.Point(31, 66)
         Me.Button5.Name = "Button5"
@@ -155,7 +155,7 @@ Partial Class FrmGroupAdministration
         '
         'Button4
         '
-        Me.Button4.Image = Global.Chat_Zilla.My.Resources.Resources.order_192
+        Me.Button4.Image = Global.Necu.My.Resources.Resources.order_192
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button4.Location = New System.Drawing.Point(31, 35)
         Me.Button4.Name = "Button4"

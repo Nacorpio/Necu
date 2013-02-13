@@ -225,7 +225,7 @@ Partial Class FrmLogin
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Chat_Zilla.My.Resources.Resources.lock
+        Me.PictureBox1.Image = Global.Necu.My.Resources.Resources.lock
         Me.PictureBox1.Location = New System.Drawing.Point(13, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)

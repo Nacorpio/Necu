@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{76073B53-37C9-486C-A14F-12D32E2A30E2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Chat_Zilla.My.MyApplication</StartupObject>
-    <RootNamespace>Chat_Zilla</RootNamespace>
-    <AssemblyName>Chatzilla</AssemblyName>
+    <StartupObject>Necu.My.MyApplication</StartupObject>
+    <RootNamespace>Necu</RootNamespace>
+    <AssemblyName>Necu</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Chatzilla.xml</DocumentationFile>
+    <DocumentationFile>Necu.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Chatzilla.xml</DocumentationFile>
+    <DocumentationFile>Necu.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -47,7 +47,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>1358199609_8943.ico</ApplicationIcon>
+    <ApplicationIcon>1358199995_45370.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="Classes\ChatZilla.vb" />
     <Compile Include="Classes\XboxProfile.vb" />
+    <Compile Include="Classes\Engine.vb" />
     <Compile Include="Forms\FrmGroupAdministration.Designer.vb">
       <DependentUpon>FrmGroupAdministration.vb</DependentUpon>
     </Compile>
@@ -196,6 +197,7 @@
     <None Include="Resources\game_monitor.png" />
     <None Include="Resources\mail.png" />
     <None Include="Resources\cross-circle.png" />
+    <Content Include="1358199995_45370.ico" />
     <Content Include="Text Files\Updates.txt" />
     <None Include="Resources\attibutes.png" />
     <None Include="Resources\donate.png" />

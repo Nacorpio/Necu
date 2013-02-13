@@ -174,12 +174,14 @@ Partial Class FrmMain
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.TabPage13 = New System.Windows.Forms.TabPage()
         Me.TabControl3 = New System.Windows.Forms.TabControl()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.TreeView1 = New System.Windows.Forms.TreeView()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabControl4 = New System.Windows.Forms.TabControl()
@@ -203,18 +205,16 @@ Partial Class FrmMain
         Me.TabPage10 = New System.Windows.Forms.TabPage()
         Me.TabPage11 = New System.Windows.Forms.TabPage()
         Me.tabPage4ImageList = New System.Windows.Forms.ImageList(Me.components)
+        Me.TabPage12 = New System.Windows.Forms.TabPage()
         Me.ImageList3 = New System.Windows.Forms.ImageList(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LblMusicTitle = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.TreeView1 = New System.Windows.Forms.TreeView()
         Me.StatusStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -229,7 +229,6 @@ Partial Class FrmMain
         Me.TabControl4.SuspendLayout()
         Me.TabPage8.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ImageList1
@@ -850,7 +849,7 @@ Partial Class FrmMain
         'ToolStripStatusLabel3
         '
         Me.ToolStripStatusLabel3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripStatusLabel3.Image = Global.Chat_Zilla.My.Resources.Resources.balloons
+        Me.ToolStripStatusLabel3.Image = Global.Necu.My.Resources.Resources.balloons
         Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
         Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(81, 17)
         Me.ToolStripStatusLabel3.Text = "My groups:"
@@ -871,7 +870,7 @@ Partial Class FrmMain
         'ToolStripStatusLabel6
         '
         Me.ToolStripStatusLabel6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripStatusLabel6.Image = Global.Chat_Zilla.My.Resources.Resources.user
+        Me.ToolStripStatusLabel6.Image = Global.Necu.My.Resources.Resources.user
         Me.ToolStripStatusLabel6.Name = "ToolStripStatusLabel6"
         Me.ToolStripStatusLabel6.Size = New System.Drawing.Size(93, 17)
         Me.ToolStripStatusLabel6.Text = "Logged in as:"
@@ -887,35 +886,35 @@ Partial Class FrmMain
         'OnlineStatusToolStripMenuItem
         '
         Me.OnlineStatusToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OnlineToolStripMenuItem, Me.AwayToolStripMenuItem, Me.DoNotDisturbToolStripMenuItem, Me.OfflineToolStripMenuItem})
-        Me.OnlineStatusToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_go
+        Me.OnlineStatusToolStripMenuItem.Image = Global.Necu.My.Resources.Resources.bullet_go
         Me.OnlineStatusToolStripMenuItem.Name = "OnlineStatusToolStripMenuItem"
         Me.OnlineStatusToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
         Me.OnlineStatusToolStripMenuItem.Text = "Online Status"
         '
         'OnlineToolStripMenuItem
         '
-        Me.OnlineToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_green
+        Me.OnlineToolStripMenuItem.Image = Global.Necu.My.Resources.Resources.bullet_green
         Me.OnlineToolStripMenuItem.Name = "OnlineToolStripMenuItem"
         Me.OnlineToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.OnlineToolStripMenuItem.Text = "Online"
         '
         'AwayToolStripMenuItem
         '
-        Me.AwayToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_orange
+        Me.AwayToolStripMenuItem.Image = Global.Necu.My.Resources.Resources.bullet_orange
         Me.AwayToolStripMenuItem.Name = "AwayToolStripMenuItem"
         Me.AwayToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.AwayToolStripMenuItem.Text = "Away"
         '
         'DoNotDisturbToolStripMenuItem
         '
-        Me.DoNotDisturbToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_red
+        Me.DoNotDisturbToolStripMenuItem.Image = Global.Necu.My.Resources.Resources.bullet_red
         Me.DoNotDisturbToolStripMenuItem.Name = "DoNotDisturbToolStripMenuItem"
         Me.DoNotDisturbToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.DoNotDisturbToolStripMenuItem.Text = "Do Not Disturb"
         '
         'OfflineToolStripMenuItem
         '
-        Me.OfflineToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.bullet_black
+        Me.OfflineToolStripMenuItem.Image = Global.Necu.My.Resources.Resources.bullet_black
         Me.OfflineToolStripMenuItem.Name = "OfflineToolStripMenuItem"
         Me.OfflineToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.OfflineToolStripMenuItem.Text = "Offline"
@@ -927,7 +926,7 @@ Partial Class FrmMain
         '
         'LogOutToolStripMenuItem
         '
-        Me.LogOutToolStripMenuItem.Image = Global.Chat_Zilla.My.Resources.Resources.cross_script
+        Me.LogOutToolStripMenuItem.Image = Global.Necu.My.Resources.Resources.cross_script
         Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
         Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
         Me.LogOutToolStripMenuItem.Text = "Log Out"
@@ -950,7 +949,7 @@ Partial Class FrmMain
         Me.StatusVaultTotalSize.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusVaultTotalSize.Name = "StatusVaultTotalSize"
         Me.StatusVaultTotalSize.Size = New System.Drawing.Size(51, 17)
-        Me.StatusVaultTotalSize.Text = "0,00 GB"
+        Me.StatusVaultTotalSize.Text = "0.00 GB"
         '
         'ToolStripStatusLabel11
         '
@@ -961,7 +960,7 @@ Partial Class FrmMain
         'ToolStripStatusLabel12
         '
         Me.ToolStripStatusLabel12.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripStatusLabel12.Image = Global.Chat_Zilla.My.Resources.Resources.smiley
+        Me.ToolStripStatusLabel12.Image = Global.Necu.My.Resources.Resources.smiley
         Me.ToolStripStatusLabel12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ToolStripStatusLabel12.Name = "ToolStripStatusLabel12"
         Me.ToolStripStatusLabel12.Size = New System.Drawing.Size(102, 17)
@@ -1001,11 +1000,13 @@ Partial Class FrmMain
         Me.ImageList2.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList2.Images.SetKeyName(0, "comment.png")
         Me.ImageList2.Images.SetKeyName(1, "full-time.png")
+        Me.ImageList2.Images.SetKeyName(2, "newspapers.png")
         '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage12)
         Me.TabControl1.ImageList = Me.ImageList3
         Me.TabControl1.Location = New System.Drawing.Point(11, 71)
         Me.TabControl1.Name = "TabControl1"
@@ -1030,6 +1031,7 @@ Partial Class FrmMain
         '
         Me.TabControl2.Controls.Add(Me.TabPage4)
         Me.TabControl2.Controls.Add(Me.TabPage5)
+        Me.TabControl2.Controls.Add(Me.TabPage13)
         Me.TabControl2.ImageList = Me.ImageList2
         Me.TabControl2.Location = New System.Drawing.Point(236, 6)
         Me.TabControl2.Name = "TabControl2"
@@ -1070,7 +1072,7 @@ Partial Class FrmMain
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Chat_Zilla.My.Resources.Resources.comment2
+        Me.PictureBox1.Image = Global.Necu.My.Resources.Resources.comment2
         Me.PictureBox1.Location = New System.Drawing.Point(496, 379)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(16, 16)
@@ -1089,7 +1091,7 @@ Partial Class FrmMain
         '
         'Button4
         '
-        Me.Button4.Image = Global.Chat_Zilla.My.Resources.Resources.camera_lens
+        Me.Button4.Image = Global.Necu.My.Resources.Resources.camera_lens
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button4.Location = New System.Drawing.Point(64, 382)
         Me.Button4.Name = "Button4"
@@ -1099,7 +1101,7 @@ Partial Class FrmMain
         '
         'Button3
         '
-        Me.Button3.Image = Global.Chat_Zilla.My.Resources.Resources.application_resize_full
+        Me.Button3.Image = Global.Necu.My.Resources.Resources.application_resize_full
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button3.Location = New System.Drawing.Point(91, 382)
         Me.Button3.Name = "Button3"
@@ -1109,7 +1111,7 @@ Partial Class FrmMain
         '
         'Button2
         '
-        Me.Button2.Image = Global.Chat_Zilla.My.Resources.Resources.blue_document_smiley
+        Me.Button2.Image = Global.Necu.My.Resources.Resources.blue_document_smiley
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.Location = New System.Drawing.Point(33, 382)
         Me.Button2.Name = "Button2"
@@ -1119,7 +1121,7 @@ Partial Class FrmMain
         '
         'Button1
         '
-        Me.Button1.Image = Global.Chat_Zilla.My.Resources.Resources.smiley
+        Me.Button1.Image = Global.Necu.My.Resources.Resources.smiley
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.Location = New System.Drawing.Point(6, 382)
         Me.Button1.Name = "Button1"
@@ -1185,6 +1187,17 @@ Partial Class FrmMain
         Me.ColumnHeader7.Text = "Chat Name"
         Me.ColumnHeader7.Width = 148
         '
+        'TabPage13
+        '
+        Me.TabPage13.ImageIndex = 2
+        Me.TabPage13.Location = New System.Drawing.Point(4, 23)
+        Me.TabPage13.Name = "TabPage13"
+        Me.TabPage13.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage13.Size = New System.Drawing.Size(608, 472)
+        Me.TabPage13.TabIndex = 2
+        Me.TabPage13.Text = "Start Page"
+        Me.TabPage13.UseVisualStyleBackColor = True
+        '
         'TabControl3
         '
         Me.TabControl3.Controls.Add(Me.TabPage3)
@@ -1243,6 +1256,16 @@ Partial Class FrmMain
         Me.TabPage6.TabIndex = 1
         Me.TabPage6.Text = "Groups"
         Me.TabPage6.UseVisualStyleBackColor = True
+        '
+        'TreeView1
+        '
+        Me.TreeView1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TreeView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TreeView1.Location = New System.Drawing.Point(3, 3)
+        Me.TreeView1.Name = "TreeView1"
+        Me.TreeView1.ShowLines = False
+        Me.TreeView1.Size = New System.Drawing.Size(211, 466)
+        Me.TreeView1.TabIndex = 0
         '
         'TabPage7
         '
@@ -1366,7 +1389,7 @@ Partial Class FrmMain
         '
         'Button9
         '
-        Me.Button9.Image = Global.Chat_Zilla.My.Resources.Resources.cross_circle
+        Me.Button9.Image = Global.Necu.My.Resources.Resources.cross_circle
         Me.Button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button9.Location = New System.Drawing.Point(376, 434)
         Me.Button9.Name = "Button9"
@@ -1378,7 +1401,7 @@ Partial Class FrmMain
         '
         'Button8
         '
-        Me.Button8.Image = Global.Chat_Zilla.My.Resources.Resources.mail
+        Me.Button8.Image = Global.Necu.My.Resources.Resources.mail
         Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button8.Location = New System.Drawing.Point(6, 434)
         Me.Button8.Name = "Button8"
@@ -1457,12 +1480,23 @@ Partial Class FrmMain
         Me.tabPage4ImageList.Images.SetKeyName(2, "computer.png")
         Me.tabPage4ImageList.Images.SetKeyName(3, "brick.png")
         '
+        'TabPage12
+        '
+        Me.TabPage12.ImageIndex = 2
+        Me.TabPage12.Location = New System.Drawing.Point(4, 23)
+        Me.TabPage12.Name = "TabPage12"
+        Me.TabPage12.Size = New System.Drawing.Size(858, 512)
+        Me.TabPage12.TabIndex = 2
+        Me.TabPage12.Text = "My Content"
+        Me.TabPage12.UseVisualStyleBackColor = True
+        '
         'ImageList3
         '
         Me.ImageList3.ImageStream = CType(resources.GetObject("ImageList3.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList3.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList3.Images.SetKeyName(0, "smiley-cool.png")
         Me.ImageList3.Images.SetKeyName(1, "game.png")
+        Me.ImageList3.Images.SetKeyName(2, "application-cloud.png")
         '
         'Label2
         '
@@ -1514,17 +1548,6 @@ Partial Class FrmMain
         Me.LineShape1.Y1 = 33
         Me.LineShape1.Y2 = 33
         '
-        'LblMusicTitle
-        '
-        Me.LblMusicTitle.AutoSize = True
-        Me.LblMusicTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMusicTitle.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.LblMusicTitle.Location = New System.Drawing.Point(39, 44)
-        Me.LblMusicTitle.Name = "LblMusicTitle"
-        Me.LblMusicTitle.Size = New System.Drawing.Size(275, 15)
-        Me.LblMusicTitle.TabIndex = 7
-        Me.LblMusicTitle.Text = "Big Things Poppin' - Do It Amended Album Version"
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -1538,7 +1561,7 @@ Partial Class FrmMain
         '
         'Button7
         '
-        Me.Button7.Image = Global.Chat_Zilla.My.Resources.Resources.dvd_go
+        Me.Button7.Image = Global.Necu.My.Resources.Resources.dvd_go
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button7.Location = New System.Drawing.Point(816, 2)
         Me.Button7.Name = "Button7"
@@ -1548,33 +1571,13 @@ Partial Class FrmMain
         '
         'Button6
         '
-        Me.Button6.Image = Global.Chat_Zilla.My.Resources.Resources.brick
+        Me.Button6.Image = Global.Necu.My.Resources.Resources.brick
         Me.Button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button6.Location = New System.Drawing.Point(845, 2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(25, 25)
         Me.Button6.TabIndex = 10
         Me.Button6.UseVisualStyleBackColor = True
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Chat_Zilla.My.Resources.Resources.music
-        Me.PictureBox2.Location = New System.Drawing.Point(18, 44)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 5
-        Me.PictureBox2.TabStop = False
-        '
-        'TreeView1
-        '
-        Me.TreeView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TreeView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TreeView1.Location = New System.Drawing.Point(3, 3)
-        Me.TreeView1.Name = "TreeView1"
-        Me.TreeView1.ShowLines = False
-        Me.TreeView1.Size = New System.Drawing.Size(211, 466)
-        Me.TreeView1.TabIndex = 0
         '
         'FrmMain
         '
@@ -1584,8 +1587,6 @@ Partial Class FrmMain
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.LblMusicTitle)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TabControl1)
@@ -1614,7 +1615,6 @@ Partial Class FrmMain
         Me.TabControl4.ResumeLayout(False)
         Me.TabPage8.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1778,11 +1778,9 @@ Partial Class FrmMain
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents LineShape2 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents LblMusicTitle As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
@@ -1810,4 +1808,6 @@ Partial Class FrmMain
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents TabPage11 As System.Windows.Forms.TabPage
     Friend WithEvents TreeView1 As System.Windows.Forms.TreeView
+    Friend WithEvents TabPage12 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage13 As System.Windows.Forms.TabPage
 End Class
